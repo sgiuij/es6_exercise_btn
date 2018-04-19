@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+</head>
+<body>
+	<div>
+		<input id="inputs1" type="text" name="input1">
+		<button id="isNumeric" onclick="checkValidation.isNumeric()">is numeric</button>
+		<button id="isInteger" onclick="checkValidation.isInteger()">is integer</button>
+		<button id="isNegInt" onclick="checkValidation.isNegInt()">is neg-int</button>
+		<button id="isNonNegInt" onclick="checkValidation.isNonNegInt()">is non-neg-int</button>
+		
+		<button id="isEmail" onclick="checkValidation.isEmail()">is email</button>
+		<button id="isNonEmpty" onclick="checkValidation.isNonEmpty()">is not empty</button>
+		<button id="isReg" onclick="checkValidation.isReg()">is reg exp</button>
+	</div>
+	<div>
+		<input id="inputs2" type="text" name="inputs2">
+		<input id="n" type="text" name="n">
+		<input id="m" type="text" name="m">
+		<button id="isMN" onclick="checkValidation.isMN()">between nm</button>
+		<button id="isMNL" onclick="checkValidation.isMNL()">length between nm</button>
+	</div>
+	<div>
+		<button id="isValid" onclick="checkValidation.isValid()">is valid</button>
+	</div>
+	<div id="answer">
+		
+	</div>
+	<script type="text/javascript" src="js/hw_3.js">
+	function ready(fn) {
+		console.log("ddd")
+	  if (document.attachEvent ? document.readyState === "complete" : 
+	  	                         document.readyState !== "loading"){
+	    fn();
+	  } else {
+	    document.addEventListener("DOMContentLoaded", fn);
+	  }
+	}
+	ready(function(){
+		console.log("rrr")
+		checkValidation;
+	});	
+	</script>
+</body>
+</html>
